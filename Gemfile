@@ -7,4 +7,7 @@ gem "jekyll"
 
 group :jekyll_plugins do
     gem "jekyll-timeago"
+    gem "jekyll-sitemap"
+    gem "jekyll-feed"
+    gem "jekyll-remote-theme"
 end
