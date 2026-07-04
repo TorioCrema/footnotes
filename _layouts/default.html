@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    {% feed_meta %}
-  </head>
-  <body>
-    {% include navigation.html %}
-    {{ content }}
+  {% include head.html %}
+  <body class="body">
+    <aside role="complementary", class="fira-sans-regular">
+      {% include navigation.html %}
+      {% include info.html %}
+    </aside>
+    <article role="main" class="fira-sans-regular">
+      {{ content }}
+    </article>
   </body>
 </html>

@@ -1,3 +1,67 @@
+@use "sass:math";
+@import "fonts.scss";
+@import "post.scss";
+
+$primary-color: black;
+$accent-color: #e7e7e7;
+$accent-background: #F5EBE0;
+$article-background: #D6CCC2;
+
+@mixin theme($theme: #EDEDE9) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+}
+
+article[role="main"] {
+  width: math.div(630px, 960px) * 100%;
+  background-color: $article-background;
+  padding: 1%;
+  box-shadow: 2px 2px 5px rgba(black, .25);
+  border-radius: 10px;
+  margin: 10px 10px 10px 0;
+}
+
+aside[role="complementary"] {
+  width: math.div(300px, 960px) * 100%;
+  margin-left: auto;
+  position: sticky;
+  top: 0;
+  margin: 10px 0 10px 10px;
+}
+
+.info {
+  background-color: $article-background;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $article-background;
+  box-shadow: 2px 2px 5px rgba(black, .25);
+  margin-top: 10px;
+}
+
+.body {
+  @include theme;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  box-shadow: 2px 2px 5px rgba(black, .25);
+  font-size: large;
+  background-color: $article-background;
+  padding: 10px;
+  border-radius: 10px;
+  a {
+    color: $primary-color;
+    padding: 5px;
+    text-decoration: none;
+  }
+}
+
 .current {
-  color: green;
+  background-color: $accent-background;
+  border-radius: 10px;
 }
