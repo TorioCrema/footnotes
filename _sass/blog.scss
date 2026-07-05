@@ -1,0 +1,44 @@
+$primary-color: black;
+$accent-color: #e7e7e7;
+$accent-background: #F5EBE0;
+$article-background: #D6CCC2;
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    padding: 1em;
+}
+
+.blog-list-item {
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: $accent-color;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.blog-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.blog-list-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.blog-list-date {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.blog-list-excerpt {
+    font-size: small;
+}
+
+.blog-list-title-header {
+  margin: 0 0 0 0;
+}

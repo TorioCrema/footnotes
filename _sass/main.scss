@@ -1,6 +1,7 @@
 @use "sass:math";
 @import "fonts.scss";
 @import "post.scss";
+@import "blog.scss";
 
 $primary-color: black;
 $accent-color: #e7e7e7;
@@ -48,6 +49,10 @@ aside[role="complementary"] {
   padding: 0;
 }
 
+a {
+  color: $primary-color;
+}
+
 nav {
   box-shadow: 2px 2px 5px rgba(black, .25);
   font-size: large;
@@ -55,7 +60,6 @@ nav {
   padding: 10px;
   border-radius: 10px;
   a {
-    color: $primary-color;
     padding: 5px;
     text-decoration: none;
   }
