@@ -6,6 +6,7 @@
         {% if author %}
             - <a href="{{ author.url }}">{{ author.name }}</a>
         {% endif %}
+        {{ page.date | timeago }}
         {{ page.excerpt }}
     {% endif %}
 </div>
