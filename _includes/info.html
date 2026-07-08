@@ -9,4 +9,19 @@
         {{ page.date | timeago }}
         {{ page.excerpt }}
     {% endif %}
+    <div class="links">
+        <div class="info-row">
+            {% for item in site.data.links %}
+            <div class="info-col">
+                <a href="{{ item.link }}" target="_blank">
+                    {% if item.image %}
+                        <img src="{{ item.image }}" alt="{{ item.name }}" class="info-img" />
+                    {% else %}
+                        {{ item.name }}
+                    {% endif %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
