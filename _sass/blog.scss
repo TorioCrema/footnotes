@@ -1,7 +1,4 @@
-$primary-color: black;
-$accent-color: #e7e7e7;
-$accent-background: #F5EBE0;
-$article-background: #D6CCC2;
+@use "colors.scss" as colors;
 
 .row {
     display: flex;
@@ -15,7 +12,7 @@ $article-background: #D6CCC2;
 .blog-list-item {
     border-radius: 10px;
     border-style: dotted;
-    border-color: $accent-color;
+    border-color: colors.$accent-color;
     padding: 1%;
     margin-top: 1%;
 }
