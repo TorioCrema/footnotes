@@ -1,0 +1,41 @@
+@use "colors.scss" as colors;
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    padding: 1em;
+}
+
+.blog-list-item {
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: colors.$accent-color;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.blog-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.blog-list-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.blog-list-date {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.blog-list-excerpt {
+    font-size: small;
+}
+
+.blog-list-title-header {
+  margin: 0 0 0 0;
+}

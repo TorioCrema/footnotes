@@ -1,0 +1,6 @@
+- name: Github
+  link: https://github.com/TorioCrema
+  image: /assets/images/GitHub_Invertocat_Black.svg
+- name: Goodreads
+  link: https://www.goodreads.com/user/show/99651443-toriocrema
+  image: /assets/images/goodreads_logo.png

@@ -1,0 +1,60 @@
+@use "sass:math";
+@use "fonts.scss";
+@use "post.scss";
+@use "blog.scss";
+@use "info.scss";
+@use "colors.scss" as colors;
+
+
+@mixin theme($theme: #EDEDE9) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+}
+
+article[role="main"] {
+  width: math.div(630px, 960px) * 100%;
+  background-color: colors.$article-background;
+  padding: 1%;
+  box-shadow: 2px 2px 5px rgba(black, .25);
+  border-radius: 10px;
+  margin: 10px 10px 10px 0;
+}
+
+aside[role="complementary"] {
+  width: math.div(300px, 960px) * 100%;
+  margin-left: auto;
+  position: sticky;
+  top: 10px;
+  margin: 10px 0 10px 10px;
+}
+
+.body {
+  @include theme;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: colors.$primary-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: colors.$primary-color;
+}
+
+nav {
+  box-shadow: 2px 2px 5px rgba(black, .25);
+  font-size: large;
+  background-color: colors.$article-background;
+  padding: 10px;
+  border-radius: 10px;
+  a {
+    padding: 5px;
+    text-decoration: none;
+  }
+}
+
+.current {
+  background-color: colors.$accent-background;
+  border-radius: 10px;
+}

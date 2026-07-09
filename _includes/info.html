@@ -1,0 +1,27 @@
+<div class="info">
+    {% if page.author %}
+        <h1>{{ page.title | upcase }}</h1>
+        {{ page.date | date_to_string }}
+        {% assign author = site.authors | where: 'short_name', page.author | first %}
+        {% if author %}
+            - <a href="{{ author.url }}">{{ author.name }}</a>
+        {% endif %}
+        {{ page.date | timeago }}
+        {{ page.excerpt }}
+    {% endif %}
+    <div class="links">
+        <div class="info-row">
+            {% for item in site.data.links %}
+            <div class="info-col">
+                <a href="{{ item.link }}" target="_blank">
+                    {% if item.image %}
+                        <img src="{{ item.image }}" alt="{{ item.name }}" class="info-img" />
+                    {% else %}
+                        {{ item.name }}
+                    {% endif %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

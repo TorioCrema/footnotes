@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body class="body">
+    <aside role="complementary", class="fira-sans-regular">
+      {% include navigation.html %}
+      {% include info.html %}
+    </aside>
+    <article role="main" class="fira-sans-regular">
+      {{ content }}
+    </article>
+  </body>
+</html>

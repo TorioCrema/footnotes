@@ -1,0 +1,33 @@
+@use "colors.scss" as colors;
+
+.info {
+  background-color: colors.$article-background;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: colors.$article-background;
+  box-shadow: 2px 2px 5px rgba(black, .25);
+  margin-top: 10px;
+}
+
+.links {
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: colors.$accent-color;
+  padding: 1%;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-col {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.info-img {
+  height: 20px;
+  border-radius: 5px;
+}
