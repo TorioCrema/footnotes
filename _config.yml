@@ -1,9 +1,12 @@
 title: "Footnotes"
+url: https://toriocrema.github.io/footnotes
+website: https://toriocrema.github.io
+basewebsite: /footnotes
+permalink: /:categories/:year/:month/:day/:title/
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-remote-theme
 
 collections:
   authors:
