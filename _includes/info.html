@@ -15,7 +15,7 @@
             <div class="info-col">
                 <a href="{{ item.link }}" target="_blank">
                     {% if item.image %}
-                        <img src="{{ item.image }}" alt="{{ item.name }}" class="info-img" />
+                        <img src="{{ site.url }}{{ item.image }}" alt="{{ item.name }}" class="info-img" />
                     {% else %}
                         {{ item.name }}
                     {% endif %}
