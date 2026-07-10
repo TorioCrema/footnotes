@@ -2,9 +2,6 @@
 title: Home
 ---
 
-Welcome to My Home Page
+I write about stuff here.
 
-{% assign date = '2020-04-13T10:20:00Z' %}
-
-- Original date - {{ date }}
-- With timeago filter - {{ date | timeago }}
+Last built on {{ site.time | date_to_string }} ({{ site.time | timeago }}).

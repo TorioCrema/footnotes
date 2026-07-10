@@ -43,18 +43,25 @@ a {
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
   box-shadow: 2px 2px 5px rgba(black, .25);
   font-size: large;
   background-color: colors.$article-background;
   padding: 10px;
   border-radius: 10px;
   a {
+    display: flex;
+    flex: 1;
     padding: 5px;
     text-decoration: none;
+    justify-content: center;
+    border: 3px solid transparent;
   }
 }
 
 .current {
-  background-color: colors.$accent-background;
+  border-color: colors.$accent-color;
+  border-style: dotted;
   border-radius: 10px;
 }
