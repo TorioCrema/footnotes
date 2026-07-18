@@ -1,5 +1,6 @@
 ---
 author: toriocrema
+excerpt: And why I'm getting back into it
 ---
 
 And why I'm getting back into it
