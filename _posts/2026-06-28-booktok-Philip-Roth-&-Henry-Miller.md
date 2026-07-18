@@ -1,6 +1,7 @@
 ---
 author: toriocrema
 title: Booktok, Philip Roth & Henry Miller
+excerpt: A rant, from knives at school to hope by way of starving hyenas.
 ---
 A rant, from knives at school to hope by way of starving hyenas.
 
