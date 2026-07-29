@@ -10,7 +10,7 @@ title: Blog
         <div class="col, blog-list-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></div>
         <div class="col, blog-list-date">{{ post.date | date_to_string }}</div>
       </div>
-      <div class="blog-list-excerpt">{{ post.excerpt }}</div>
+      <div class="blog-list-excerpt"><p>{{ post.excerpt }}</p></div>
     </li>
   {% endfor %}
 </ul>
